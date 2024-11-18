@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CRUDTimeJogador</string>
+    <string name="appCadastroEsporte">App Esporte</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnInserir">Inserir</string>
+    <string name="btnModificar">Modificar</string>
+    <string name="btnExcluir">Excluir</string>
+    <string name="btnListar">Listar</string>
+    <string name="time">Time</string>
+    <string name="codigoTime">Código</string>
+    <string name="nomeTime">Nome</string>
+    <string name="cidadeTime">Cidade</string>
+    <string name="jogador">Jogador</string>
+    <string name="idJogador">ID</string>
+    <string name="nomeJogador">Nome</string>
+    <string name="dataNascJogador">Data de Nascimento</string>
+    <string name="alturaJogador">Altura</string>
+    <string name="pesoJogador">Peso</string>
+    <string name="timeJogador">Time</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

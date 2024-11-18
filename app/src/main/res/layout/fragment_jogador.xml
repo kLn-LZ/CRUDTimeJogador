@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentJogador"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JogadorFragment">
+
+    <TextView
+        android:id="@+id/tvListarJogador"
+        android:layout_width="411dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnListarJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:text="@string/btnListar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnExcluirJogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnExcluirJogador" />
+
+    <Button
+        android:id="@+id/btnExcluirJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="26dp"
+        android:text="@string/btnExcluir"
+        app:layout_constraintBottom_toTopOf="@+id/tvListarJogador"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnModificarJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="69dp"
+        android:text="@string/btnModificar"
+        app:layout_constraintBottom_toBottomOf="@+id/btnExcluirJogador"
+        app:layout_constraintEnd_toEndOf="@+id/spTimeJogador"
+        app:layout_constraintTop_toTopOf="@+id/spTimeJogador" />
+
+    <Button
+        android:id="@+id/btnInserirJogador"
+        android:layout_width="89dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="21dp"
+        android:text="@string/btnInserir"
+        app:layout_constraintBottom_toBottomOf="@+id/btnModificarJogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnModificarJogador" />
+
+    <EditText
+        android:id="@+id/etIdJogador"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="45dp"
+        android:ems="10"
+        android:hint="@string/idJogador"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBuscarJogador"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuscarJogador"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnBuscarJogador" />
+
+    <EditText
+        android:id="@+id/etNomeJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="61dp"
+        android:ems="10"
+        android:hint="@string/nomeJogador"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/etDataNascJogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etIdJogador" />
+
+    <EditText
+        android:id="@+id/etDataNascJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/dataNascJogador"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAlturaJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="124dp"
+        android:ems="10"
+        android:hint="@string/alturaJogador"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/spTimeJogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etNomeJogador" />
+
+    <EditText
+        android:id="@+id/etPesoJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="59dp"
+        android:ems="10"
+        android:hint="@string/pesoJogador"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/spTimeJogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etAlturaJogador" />
+
+    <Spinner
+        android:id="@+id/spTimeJogador"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="307dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="307dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etIdJogador" />
+
+    <Button
+        android:id="@+id/btnBuscarJogador"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="73dp"
+        android:text="@string/btnBuscar"
+        app:layout_constraintBottom_toTopOf="@+id/etDataNascJogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etIdJogador"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTituloJogador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:scrollbars="vertical"
+        android:text="@string/jogador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
